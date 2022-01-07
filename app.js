@@ -84,7 +84,7 @@ app.listen(port)
 
 
 
-//Initialization.initializeDatabase();
+Initialization.initializeDatabase();
 
 console.log(process.env.APPLICATION_NAME + "server on  port : " + port)
 

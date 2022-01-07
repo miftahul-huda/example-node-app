@@ -1,4 +1,4 @@
-//const LoggerModel  = require( './modules/models/loggermodel')
+const LoggerModel  = require( './modules/models/loggermodel')
 
 const { Sequelize, Model, DataTypes } = require('sequelize');
 const process = require('process');
@@ -14,6 +14,7 @@ class Initialization {
     static async initializeDatabase(){
 
         let force = false;
+        LoggerModel.initialize(sequelize, force);
         await sequelize.sync();
     }
 }

@@ -19,5 +19,11 @@ router.post('/add', function (req, res){
     
 })
 
+router.get('', function (req, res){
+    
+    res.send("Hello, this is example app")
+    
+})
+
 
 module.exports = router;

@@ -5,6 +5,9 @@ const path = require('path');
 const fs = require('fs');
 const https = require('https');
 
+const os = require('os');
+
+
 const LoggerLogic = require("../modules/logic/loggerlogic")
 
 
@@ -20,8 +23,9 @@ router.post('/add', function (req, res){
 })
 
 router.get('', function (req, res){
-    
-    res.send("Hello, this is example app")
+
+    var hostname = os.hostname();
+    res.send("Hello, this is example app from " + hostname)
     
 })
 

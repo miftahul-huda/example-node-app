@@ -25,7 +25,9 @@ router.post('/add', function (req, res){
 router.get('', function (req, res){
 
     var hostname = os.hostname();
-    res.send("Hello, this is example app from " + hostname)
+    let id = LoggerLogic.makeid(10);
+
+    res.send("Hello, this is example app from: <b>" + hostname + "</b>, session : " + id )
     
 })
 

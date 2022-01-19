@@ -1,5 +1,6 @@
 [
     { "path" :  "/web", "router"  : "./routes/web" },
     { "path" :  "", "router"  : "./routes/web" },
-    { "path" :  "/log", "router"  : "./routes/logger" }
+    { "path" :  "/log", "router"  : "./routes/logger" },
+    { "path" :  "/health", "router"  : "./routes/health" }
 ]
